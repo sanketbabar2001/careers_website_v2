@@ -2,6 +2,7 @@ modules = ["python-3.10:v18-20230807-322e88b", "python-3.10:v25-20230920-d4ad2e4
 
 hidden = [".pythonlibs"]
 run = "python app.py"
+entrypoint = "main.py"
 
 [nix]
 channel = "stable-23_05"
@@ -177,3 +178,6 @@ zeroUnits = "ignore"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config"]
+
+[unitTest]
+language = "python3"
